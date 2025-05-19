@@ -29,6 +29,7 @@ body {
     font-size: 32px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .block-one{
     display: flex;
     height: 90%;
@@ -57,3 +58,8 @@ body {
     font-weight: 300;
 
 }
+ul li::marker {
+    content: "◆"; /* Unicode diamond symbol */
+    color: #333;
+    font-size: 1em;
+  }

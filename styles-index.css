@@ -6,69 +6,138 @@ body {
     justify-content: left;
     margin: 0%;
     background: linear-gradient(0deg, rgb(85, 3, 13), rgb(126, 203, 194));
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.navbar{
+
+.navbar {
     height: 10%;
     width: 100%;
     background-color: black;
     color: rgb(253, 185, 75);
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
-.navbar a{
+
+.navbar a {
     padding-top: 20px;
     margin: 10px;
     color: rgb(253, 185, 75);
     text-decoration: none;
 }
-.navbar a:hover{
-    height: 10%;
-    width: 100%;
-    background-color: black;
+
+.navbar a:hover {
     color: rgb(248, 228, 196);
     font-size: 32px;
 }
-.block-one{
+
+.block-one {
     display: flex;
+    flex-direction: row;
     height: 90%;
     width: 100%;
-    color:black;
+    color: black;
     font-weight: bolder;
     font-size: x-large;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
 }
 
-.block-one img
-{
+.block-one img {
     height: 100%;
+    max-width: 100%;
+    object-fit: contain;
 }
 
-.Task-info{
+.Task-info {
     width: 60%;
     line-height: 5px;
     margin-top: 5%;
-    
 }
-.Task-info li{
+
+.Task-info li {
     margin-left: 5%;
     width: auto;
     text-decoration: underline;
     font-weight: 300;
 }
 
-.p-tap{
+.p-tap {
     font-size: 100px;
     text-align: center;
-
 }
 
-.p-otd{
+.p-otd {
     text-align: center;
     color: rgb(36, 34, 34);
 }
 
-.p-te{
+.p-te {
     text-align: center;
     font-size: 100px;
+}
+
+/* 📱 Responsive for small screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        font-size: 22px;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .navbar a:hover {
+        font-size: 20px;
+    }
+
+    .block-one {
+        flex-direction: column;
+        font-size: medium;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .block-one img {
+        width: 100%;
+        height: 30%;
+        object-fit: cover;
+        object-position: 0 19%;
+        border: 10px;
+        
+    }
+    .block-one img:last-child {
+        width: 100%;
+        height: 30%;
+        object-fit: cover;
+        object-position: 0 60%;
+        border: 10px;
+        
+    }
+
+    .Task-info {
+        width: 96%;
+        line-height: 0.5;
+        margin: 0%;
+        border: solid 10px black;
+    }
+
+    .p-tap,
+    .p-te {
+        font-size: 40px;
+    }
+
+    .p-otd {
+        font-size: 16px;
+    }
 }
