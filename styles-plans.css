@@ -63,3 +63,60 @@ ul li::marker {
     color: #333;
     font-size: 1em;
   }
+  .block-one img:last-child {
+    display: none;
+    
+}
+
+  
+/* 📱 Responsive for small screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        font-size: 22px;
+        height: 10%;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .navbar a:hover {
+        font-size: 20px;
+    }
+
+    .block-one {
+        flex-direction: column;
+        font-size: medium;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .block-one img {
+        width: 100%;
+        height: 20%;
+        object-fit: cover;
+        object-position: 0 5%;
+        border: 10px;
+        
+    }
+    .block-one img:last-child {
+        display: flex;
+        width: 100%;
+        height: 40%;
+        object-fit: cover;
+        object-position: 0 70%;
+        border: 10px;
+        
+    }
+
+    .Task-info {
+        width: 96%;
+        line-height: 1.5;
+        margin: 0%;
+        border: solid 10px black;
+    }
+}

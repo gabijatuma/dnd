@@ -86,7 +86,7 @@ body {
 @media screen and (max-width: 768px) {
     .navbar {
         font-size: 22px;
-        height: auto;
+        height: 10%;
         padding: 10px 0;
     }
 
