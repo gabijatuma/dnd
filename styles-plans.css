@@ -115,6 +115,7 @@ ul li::marker {
 
     .Task-info {
         width: 96%;
+        height: 40%;
         line-height: 1.5;
         margin: 0%;
         border: solid 10px black;
