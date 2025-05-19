@@ -5,7 +5,7 @@ body {
     align-items: center;
     justify-content: left;
     margin: 0%;
-    background: linear-gradient(180deg, rgb(22, 16, 25), rgb(251, 168, 35));
+    background: linear-gradient(0deg, rgb(85, 3, 13), rgb(126, 203, 194));
 }
 .navbar{
     height: 10%;
@@ -13,7 +13,7 @@ body {
     background-color: black;
     color: rgb(253, 185, 75);
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .navbar a{
     padding-top: 20px;
@@ -27,7 +27,6 @@ body {
     background-color: black;
     color: rgb(248, 228, 196);
     font-size: 32px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .block-one{
     display: flex;
@@ -36,7 +35,7 @@ body {
     color:black;
     font-weight: bolder;
     font-size: x-large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
 }
 
@@ -46,8 +45,9 @@ body {
 }
 
 .Task-info{
-    margin-left: 5%;
-    width: auto;
+    width: 60%;
+    line-height: 5px;
+    margin-top: 5%;
     
 }
 .Task-info li{
@@ -55,5 +55,20 @@ body {
     width: auto;
     text-decoration: underline;
     font-weight: 300;
+}
 
+.p-tap{
+    font-size: 100px;
+    text-align: center;
+
+}
+
+.p-otd{
+    text-align: center;
+    color: rgb(36, 34, 34);
+}
+
+.p-te{
+    text-align: center;
+    font-size: 100px;
 }
